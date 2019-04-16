@@ -45,12 +45,12 @@ public class InstructionActivity extends AppCompatActivity {
         nextButton.setClickable(true);
         wasAdShown = false;
         MobileAds.initialize(this,
-                "ca-app-pub-4945302572759470~1152825065");
+                "");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-4945302572759470/4020986398");
+        mInterstitialAd.setAdUnitId("");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
