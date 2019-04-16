@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tc.obd1directory">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/emblem"
+        android:label="OBD1"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4945302572759470~1152825065"/>
+        <activity android:name=".MakeSelectActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ModelSelectActivity"
+            android:screenOrientation="portrait"
+            android:label="Model View">
+        </activity>
+        <activity
+            android:name=".EngineSelectActivity"
+            android:screenOrientation="portrait"
+            android:label="Engine View">
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:screenOrientation="portrait"
+            android:label="Main Menu">
+        </activity>
+        <activity
+            android:name=".CodeActivity"
+            android:screenOrientation="portrait"
+            android:label="Code Menu">
+        </activity>
+        <activity
+            android:name=".InstructionActivity"
+            android:screenOrientation="portrait"
+            android:label="Instruction Menu">
+        </activity>
+    </application>
+
+</manifest>
