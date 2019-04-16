@@ -44,6 +44,7 @@ public class InstructionActivity extends AppCompatActivity {
         nextButton = (TextView) findViewById(R.id.nextButton);
         nextButton.setClickable(true);
         wasAdShown = false;
+        //removed google ad codes for git
         MobileAds.initialize(this,
                 "");
         mAdView = findViewById(R.id.adView);
